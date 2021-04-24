@@ -1,0 +1,40 @@
+.search {
+  float: left;
+}
+
+.dashboard {
+  float: right;
+}
+
+.nav-items > ul > li {
+  float: left;
+  padding: 10px;
+  list-style: none;
+}
+.navbar {
+  width: 100%;
+}
+.notifications {
+  float: right;
+  padding: 10px;
+}
+
+.left-sidebar {
+  text-align: left;
+  width: 20%;
+  height: 500px;
+  background: sienna;
+}
+
+.center-container {
+  text-align: left;
+  width: 60%;
+  height: 500px;
+  background: royalblue;
+}
+.right-sidebar {
+  text-align: left;
+  width: 20%;
+  height: 500px;
+  background: slateblue;
+}
