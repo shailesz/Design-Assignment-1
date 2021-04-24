@@ -1,12 +1,22 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
+
+}
+
+body, .footer{
+  max-width: 80% ;
+  margin: auto;
 }
 
 /* floats left */
 .fl {
   float: left;
+}
+
+/* floats right */
+.fr {
+  float: right;
 }
 
 /* relative positioning */
@@ -18,4 +28,9 @@
 .sbi {
   position: absolute;
   right: 0px;
+}
+
+/* list style none */
+.lsn {
+  list-style: none;
 }

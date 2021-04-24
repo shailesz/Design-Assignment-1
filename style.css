@@ -1,3 +1,7 @@
+.header{
+  background: #7DD9E8;
+}
+
 .search {
   float: left;
 }
@@ -9,7 +13,6 @@
 .nav-items > ul > li {
   float: left;
   padding: 10px;
-  list-style: none;
 }
 .navbar {
   width: 100%;
@@ -37,4 +40,22 @@
   width: 20%;
   height: 500px;
   background: slateblue;
+}
+
+.footer {
+  background: gray;
+  position: fixed;
+  bottom: 0px;
+  width: 80%;
+}
+
+.footer-navigation > ul > li {
+  float: left;
+}
+
+.footer-navigation > ul > li:after {
+  content: "\2022";
+}
+.footer-navigation > ul > li:last-child::after {
+  content: "";
 }
