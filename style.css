@@ -1,8 +1,7 @@
 .header {
   background: #7dd9e8;
-  height: 85px;
+  height: 44px;
   padding: 22px 32px;
-  box-sizing: border-box;
 }
 
 .header-content-wrapper {
@@ -11,35 +10,70 @@
 }
 
 .search {
+  margin-top: 20px;
   padding-left: 23px;
   float: left;
+  position: relative;
 }
 
 #search-bar > input {
   padding: 5px;
   background: #caeff7;
   border: none;
-  height: 20px;
+  height: 10px;
   width: 300px;
   outline: none;
+  margin-right: 7px;
 }
+
 #search-bar:before {
   content: " ";
   float: left;
   width: 10px;
-  height: 100%;
+  height: 20px;
   margin-right: -2px;
+  margin-top: 3px;
   background: url(images/components/search-bar-left.png) no-repeat 0 0;
-  background-size: 80%;
 }
 
-#search-bar:after {
+.clear-input {
+  padding: 5px;
+  position: absolute;
+  right: 27px;
+  top: -3px;
+}
+
+.clear-input:hover {
+  cursor: pointer;
+}
+
+.search-icon {
+  padding: 5px;
+  margin-right: 10px;
+  margin-left: -5px;
+  margin-top: 3px;
+  height: 10px;
+  background: #caeff7;
+}
+
+.search-icon:hover {
+  cursor: pointer;
+}
+
+.search-icon > img {
+  margin-right: -5px;
+  margin-bottom: 5px;
+}
+
+.search-icon:after {
   content: " ";
   float: right;
   width: 10px;
-  height: 100%;
+  height: 20px;
   background: url(images/components/search-bar-right.png) no-repeat 0 0;
   background-size: 80%;
+  margin-right: -15px;
+  margin-top: -5px;
 }
 
 #search-button {
@@ -51,25 +85,33 @@
   height: 20px;
   line-height: 20px;
   font-size: 10px;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
-.button-wrapper {
+.button-wrapper,
+button:hover {
+  padding-top: 2px;
   text-align: center;
+  cursor: pointer;
 }
-.button-wrapper::before {
+
+.button-wrapper:before {
   content: " ";
   float: left;
   width: 10px;
-  height: 100%;
+  height:20px;
+  margin-top: 20px;
   margin-right: -3px;
   background: url(images/components/search-button-left.png) no-repeat 0 0;
-  background-size: 80%;
+  
 }
-.button-wrapper::after {
+.button-wrapper:after {
   content: " ";
   float: left;
   width: 10px;
-  height: 100%;
+  height: 20px;
+  margin-top: 20px;
   margin-right: -3px;
   background: url(images/components/search-button-right.png) no-repeat 0 0;
   background-size: 80%;
@@ -99,7 +141,6 @@
   background: #f5f5f5;
   font-size: 12px;
   color: #3c3c3c;
-
 }
 .notifications {
   float: right;
@@ -112,9 +153,32 @@
   padding: 0px 10px;
 }
 
-.notifications > ul > li > img {
+#icon-bin {
   float: left;
   padding: 0px 10px;
+  height: 25px;
+  background: url("/images/icons/icon-bin-inactive.png") no-repeat;
+}
+
+.notifications > ul > li:hover #icon-bin {
+  float: left;
+  padding: 0px 10px;
+  height: 25px;
+  background: url("/images/icons/icon-bin.png") no-repeat;
+}
+
+#icon-person {
+  float: left;
+  padding: 0px 10px;
+  height: 25px;
+  background: url("/images/icons/icon-person-inactive.jpg") no-repeat;
+}
+
+.notifications > ul > li:hover #icon-person {
+  float: left;
+  padding: 0px 10px;
+  height: 20px;
+  background: url("/images/icons/icon-person.jpg") no-repeat;
 }
 
 .body {
@@ -140,13 +204,15 @@
   font-size: 14px;
 }
 
-.recent-searches-top > ul > li {
+.recent-searches > ul > li > a {
   padding: 12px;
+  display: block;
 }
 
-.recent-searches-bottom > ul > li {
+.recent-searches > ul > li>a:hover {
   padding: 12px;
-  background: #f5f5f5;
+  background: white;
+  display: block;
 }
 
 .center-container {
@@ -168,7 +234,7 @@
   width: 10px;
   height: 65px;
   background: url(images/components/grey-big-button-left.jpg) no-repeat 0 0;
-  background-size: 80%;
+ 
 }
 
 .right-selector {
@@ -189,7 +255,7 @@
   height: 65px;
   margin-right: -2px;
   background: url(images/components/grey-big-button-right.jpg) no-repeat 0 0;
-  background-size: 80%;
+  
 }
 
 .selector-header {
@@ -210,24 +276,55 @@
   color: #3c3c3c;
 }
 
+.selector-child:hover {
+  margin: 0px 10px;
+  width: 104px;
+  float: left;
+  background: #2fc1da;
+  text-align: center;
+  height: 28px;
+  font-size: 10px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #3c3c3c;
+}
+
 .selector-child:before {
   content: " ";
   float: left;
   width: 10px;
-  height: 28px;
+  height: 30px;
+  margin-right: -5px;
+  margin-top: -1px;
   background: url(images/components/grey-menu-left.jpg) no-repeat 0 0;
-  background-size: 80%;
 }
+
+.selector-child:hover:before {
+  content: " ";
+  float: left;
+  width: 10px;
+  height: 30px;
+  margin-right: -5px;
+  margin-top: -1px;
+  background: url(images/components/blue-menu-left.jpg) no-repeat 0 0;
+}
+
 .selector-child:after {
   content: " ";
   float: right;
   width: 10px;
-  height: 28px;
-  margin-right: -2px;
+  height: 29px;
+  margin-top: -1px;
   background: url(images/components/grey-menu-right.jpg) no-repeat 0 0;
-  background-size: 80%;
 }
-
+.selector-child:hover:after {
+  content: " ";
+  float: right;
+  width: 10px;
+  height: 28px;
+  margin-top: 0px;
+  background: url(images/components/blue-menu-right.jpg) no-repeat 0 0;
+}
 .entries-seperator {
   border: 2px solid #2fc1da;
   width: 514px;
@@ -265,29 +362,68 @@
 
 .article-type {
   font-size: 10px;
-  font-weight: bold;
+  font-weight: 800;
   line-height: 18px;
 }
 
-.article-seperator{
+.article-seperator {
   margin-top: 15px;
   border: 1px solid #d8d8d8;
+}
+
+.author {
+  text-decoration: none;
+  color: #4fafbf;
+  font-weight: 800;
+}
+
+.subscribed {
+  text-decoration: none;
+  color: #6f9621;
+  font-weight: 800;
+}
+
+.topic-box {
+  text-decoration: none;
+  color: #4fafbf;
+  font-weight: 800;
+}
+
+.new-entry {
+  text-decoration: none;
+  color: #4fafbf;
+}
+
+.new-comment {
+  text-decoration: none;
+  color: #4fafbf;
+}
+
+.topic-box-invite {
+  text-decoration: none;
+  color: #d33f1b;
 }
 
 .right-sidebar {
   text-align: left;
   width: 176px;
   height: 625px;
-  background: #f5f5f5;;
-}
-
-.right-sidebar > ul > li{
-  padding: 12px;
   background: #f5f5f5;
 }
 
+.right-sidebar > ul >  li > a {
+  padding: 12px;
+  display: block;
+}
+
+.right-sidebar > ul >  li>a:hover {
+  padding: 12px;
+  background: white;
+  display: block;
+}
+
 .footer {
-  color: white;
+  color: #bbbbbb;
   background: gray;
   position: fixed;
   bottom: 0px;
@@ -304,12 +440,16 @@
 
 .footer-navigation > ul > li:after {
   content: "\2022";
-  margin-left: 6px ;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-left: 6px;
+  color: #bbbbbb;
 }
-.footer-navigation > ul > li:last-child::after {
+.footer-navigation > ul > li:last-child:after {
   content: "";
 }
 
-.footer-copyright{
+.footer-copyright {
   line-height: 45px;
 }

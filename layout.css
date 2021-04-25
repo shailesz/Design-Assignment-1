@@ -54,3 +54,15 @@ body, .footer{
 .fw-b{
   font-weight: bold;
 }
+
+/* text decoration none */
+.tdn{
+  text-decoration: none;
+  color: #3c3c3c;
+}
+
+/* footer text decoration */
+.tdf{
+  color: #bbbbbb;
+  text-decoration: none;
+}

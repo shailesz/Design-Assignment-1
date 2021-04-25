@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="reset.css" />
@@ -14,17 +15,28 @@
             <input
               class="fs-10"
               type="text"
-              placeholder="Search by Term, Member, or Entry Title"
+              value="Search by Term, Member, or Entry Title"
             />
+            <div class="clear-input fr">
+              <img src="/images/icons/icon-x.png" alt="clear-input" />
+            </div>
+            <div class="search-icon fr">
+              <img src="/images/icons/icon-search.png" alt="search-icon" />
+            </div>
           </div>
         </div>
+        
         <div class="button-wrapper">
-          <button id="search-button">SEARCH</button>
+          <button id="search-button" type="submit">SEARCH</button>
         </div>
 
         <div class="dashboard fr">
           <span class="username fw-b">Joe Burros</span>
-          <div class="dashboard-options fs-10 fw-b">Home | Settings | Logout</div>
+          <div class="dashboard-options">
+            <a class="tdn fs-10 fw-b" href="#">Home</a> |
+            <a class="tdn fs-10 fw-b" href="#">Settings</a> |
+            <a class="tdn fs-10 fw-b" href="#">Logout</a>
+          </div>
         </div>
       </div>
     </div>
@@ -32,21 +44,25 @@
     <div class="navbar fw-b clearfix">
       <div class="nav-items">
         <ul class="lsn">
-          <li>Create New Entry</li>
-          <li>My Topic Boxes</li>
-          <li>Friends</li>
-          <li>Invite New Member</li>
+          <li><a class="tdn" href="#">Create New Entry</a></li>
+          <li><a class="tdn" href="#">My Topic Boxes</a></li>
+          <li><a class="tdn" href="#">Friends</a></li>
+          <li><a class="tdn" href="#">Invite New Member</a></li>
         </ul>
 
         <div class="notifications">
           <ul class="lsn">
             <li>
-              <img src="/images/icons/icon-bin.png" alt="icon-box" />
-              Topic Boxes Invites - 2
+              <a class="tdn" href="#">
+                <div id="icon-bin"></div>
+                Topic Boxes Invites - 2
+              </a>
             </li>
             <li>
-              <img src="/images/icons/icon-person.png" alt="icon-person" />
-              Friend Requests - 0
+              <a class="tdn" href="#">
+                <div id="icon-person"></div>
+                Friend Requests - 0
+              </a>
             </li>
           </ul>
         </div>
@@ -55,79 +71,88 @@
 
     <div class="body clearfix">
       <div class="left-sidebar fl">
-        <div class="recent-searches-top">
+        <div class="recent-searches">
           <div class="sidebar-heading fw-b"><h2>Recent Searches</h2></div>
           <ul class="psr lsn fs-10 fw-b">
             <li>
-              Nick Cave and the <br />Bad Seeds
-              <img
-                class="sbi"
-                src="/images/icons/icon-download.png"
-                alt="icon-download.jpg"
-              />
+              <a class="tdn" href="#">
+                Nick Cave and the <br />Bad Seeds
+                <img
+                  class="sbi"
+                  src="/images/icons/icon-download.png"
+                  alt="icon-download.jpg"
+                />
+              </a>
             </li>
             <li>
-              African Animals
-              <img
-                class="sbi"
-                src="/images/icons/icon-download.png"
-                alt="icon-download.jpg"
-              />
+              <a class="tdn" href="#">
+                African Animals
+                <img
+                  class="sbi"
+                  src="/images/icons/icon-download.png"
+                  alt="icon-download.jpg"
+              /></a>
             </li>
           </ul>
         </div>
 
-        <div class="recent-searches-bottom">
+        <div class="recent-searches">
           <div class="sidebar-heading"><h2>Recent Searches</h2></div>
 
           <ul class="psr lsn fs-10 fw-b">
             <li>
-              Different versions of the <br />Tristan Und Isolde Prelude
-              <img
-                class="sbi"
-                src="/images/icons/icon-hamburger.png"
-                alt="icon-hamburger.jpg"
-              />
+              <a class="tdn" href="#">
+                Different versions of the <br />Tristan Und Isolde Prelude
+                <img
+                  class="sbi"
+                  src="/images/icons/icon-hamburger.png"
+                  alt="icon-hamburger.jpg"
+              /></a>
             </li>
             <li>
-              Music
-              <img
-                class="sbi"
-                src="/images/icons/icon-hamburger.png"
-                alt="icon-hamburger.jpg"
-              />
+              <a class="tdn" href="#">
+                Music
+                <img
+                  class="sbi"
+                  src="/images/icons/icon-hamburger.png"
+                  alt="icon-hamburger.jpg"
+              /></a>
             </li>
             <li>
-              Guitar
-              <img
-                class="sbi"
-                src="/images/icons/icon-hamburger.png"
-                alt="icon-hamburger.jpg"
-              />
+              <a class="tdn" href="#">
+                Guitar
+                <img
+                  class="sbi"
+                  src="/images/icons/icon-hamburger.png"
+                  alt="icon-hamburger.jpg"
+              /></a>
             </li>
             <li>
-              Bob Cohen
-              <img
-                class="sbi"
-                src="/images/icons/icon-hamburger.png"
-                alt="icon-hamburger.jpg"
-              />
+              <a class="tdn" href="#">
+                Bob Cohen
+                <img
+                  class="sbi"
+                  src="/images/icons/icon-hamburger.png"
+                  alt="icon-hamburger.jpg"
+              /></a>
             </li>
             <li>
-              Mark Schnack
-              <img
-                class="sbi"
-                src="/images/icons/icon-hamburger.png"
-                alt="icon-hamburger.jpg"
-              />
+              <a class="tdn" href="#">
+                Mark Schnack
+                <img
+                  class="sbi"
+                  src="/images/icons/icon-hamburger.png"
+                  alt="icon-hamburger.jpg"
+              /></a>
             </li>
             <li>
-              Jefferson Dickey
-              <img
-                class="sbi"
-                src="/images/icons/icon-hamburger.png"
-                alt="icon-hamburger.jpg"
-              />
+              <a class="tdn" href="#">
+                Jefferson Dickey
+                <img
+                  class="sbi"
+                  src="/images/icons/icon-hamburger.png"
+                  alt="icon-hamburger.jpg"
+              /></a>
             </li>
           </ul>
         </div>
@@ -138,13 +163,21 @@
         <div class="entries-selector clearfix">
           <div class="left-selector fs-12 fw-b fl clearfix">
             <div class="selector-header">All Entries</div>
-            <div class="selector-child fl">All Members</div>
-            <div class="selector-child fl">Friends</div>
+            <a class="tdn" href="#"
+              ><div class="selector-child fl">All Members</div></a
+            >
+            <a class="tdn" href="#"
+              ><div class="selector-child fl">Friends</div></a
+            >
           </div>
           <div class="right-selector fs-12 fw-b fr">
             <div class="selector-header">Subscribed</div>
-            <div class="selector-child fl">New Entries</div>
-            <div class="selector-child fl">New Comments</div>
+            <a class="tdn" href="#"
+              ><div class="selector-child fl">New Entries</div></a
+            >
+            <a class="tdn" href="#"
+              ><div class="selector-child fl">New Comments</div></a
+            >
           </div>
         </div>
         <hr class="entries-seperator" />
@@ -160,55 +193,64 @@
                     Day for Night by François Truffaut, a ground breaking film
                   </div>
                   <div class="article-child-secondary-heading">
-                    by Alan Coe | Feburary 10, 2012 | Subscribed
+                    by <a class="author" href="#">Alan Coe</a> | Feburary 10,
+                    2012 | <a href="#" class="subscribed">Subscribed</a>
                   </div>
                   <div class="article-child-ternary-heading">
-                    From topic Box: My Favourite Movies
+                    From topic Box:
+                    <a class="topic-box" href="#">My Favourite Movies</a>
                   </div>
                 </div>
               </div>
             </li>
-            <hr class="article-seperator" />
+            <li><hr class="article-seperator" /></li>
             <li>
               <div class="article-child clearfix">
                 <div class="article-image">
                   <img class="fl" src="/images/2.png" alt="man.jpg" />
                 </div>
                 <div class="article-child-headings fl">
-                  <div class="article-type">NEW ENTRY!</div>
+                  <a href="#" class="new-entry">
+                    <div class="article-type">NEW ENTRY!</div></a
+                  >
                   <div class="article-child-primary-heading">
                     Blade Runner, The Director's Cut
                   </div>
                   <div class="article-child-secondary-heading">
-                    by Mary Pilot | Feburary 8, 2012
+                    by <a href="#" class="author">Mary Pilot</a> | Feburary 8,
+                    2012
                   </div>
                   <div class="article-child-ternary-heading">
-                    From topic Box: Behind the Scene
+                    From topic Box:
+                    <a href="#" class="topic-box">Behind the Scene</a>
                   </div>
                 </div>
               </div>
             </li>
-            <hr class="article-seperator" />
+            <li><hr class="article-seperator" /></li>
             <li>
               <div class="article-child clearfix">
                 <div class="article-image">
                   <img class="fl" src="/images/3.png" alt="man.jpg" />
                 </div>
                 <div class="article-child-headings fl">
-                  <div class="article-type">NEW COMMENT!</div>
+                  <a href="#" class="new-comment"
+                    ><div class="article-type">NEW COMMENT!</div></a
+                  >
                   <div class="article-child-primary-heading">
                     The Best French Resturant in Chicago?
                   </div>
                   <div class="article-child-secondary-heading">
-                    by Jim Roy | Feburary 7, 2012
+                    by <a href="#" class="author">Jim Roy</a> | Feburary 7, 2012
                   </div>
                   <div class="article-child-ternary-heading">
-                    From topic Box: Chicago Resturants Reviews
+                    From topic Box:
+                    <a href="#" class="topic-box">Chicago Resturants Reviews</a>
                   </div>
                 </div>
               </div>
             </li>
-            <hr class="article-seperator" />
+            <li><hr class="article-seperator" /></li>
             <li>
               <div class="article-child clearfix">
                 <div class="article-image">
@@ -219,34 +261,41 @@
                     The Meaning of Night. Dark Book but incredibly well written.
                   </div>
                   <div class="article-child-secondary-heading">
-                    by John-Peter Moïse | Feburary 10, 2012 | Subscribed
+                    by <a href="#" class="author">John-Peter Moïse</a> |
+                    Feburary 10, 2012 |
+                    <a href="#" class="subscribed">Subscribed</a>
                   </div>
                   <div class="article-child-ternary-heading">
-                    From topic Box: Books Read & Books to Read
+                    From topic Box:
+                    <a href="#" class="topic-box">Books Read & Books to Read</a>
                   </div>
                 </div>
               </div>
             </li>
-            <hr class="article-seperator" />
+            <li><hr class="article-seperator" /></li>
             <li>
               <div class="article-child clearfix">
                 <div class="article-image">
                   <img class="fl" src="/images/5.png" alt="man.jpg" />
                 </div>
                 <div class="article-child-headings fl">
-                  <div class="article-type">TOPIC BOX INVITE!</div>
+                  <a href="#" class="topic-box-invite"
+                    ><div class="article-type">TOPIC BOX INVITE!</div></a
+                  >
 
                   <div class="article-child-primary-heading">Pea Pesto</div>
                   <div class="article-child-secondary-heading">
-                    by Marianne Gig | Feburary 6, 2012
+                    by <a href="#" class="author">Marianne Gig</a> | Feburary 6,
+                    2012
                   </div>
                   <div class="article-child-ternary-heading">
-                    From topic Box: Favourite Recipes
+                    From topic Box:
+                    <a href="#" class="topic-box">Favourite Recipes</a>
                   </div>
                 </div>
               </div>
             </li>
-            <hr class="article-seperator" />
+            <li><hr class="article-seperator" /></li>
           </ul>
         </div>
       </div>
@@ -254,26 +303,26 @@
       <div class="right-sidebar fl">
         <div class="sidebar-heading"><h2>Video Tutorials</h2></div>
         <ul class="fs-10 fw-b lsn">
-          <li>Overview of TuTangle</li>
-          <li>Searching the Site</li>
-          <li>Previous & Saved Searches</li>
-          <li>The Topic Box Page</li>
-          <li>Creating a Topic Box</li>
-          <li>View Topic Box Entries</li>
-          <li>Creating an Entry</li>
-          <li>Privacy Settings</li>
-          <li>Co-Authoring</li>
+          <li><a class="tdn" href="#"> Overview of TuTangle</a></li>
+          <li><a class="tdn" href="#">Searching the Site</a></li>
+          <li><a class="tdn" href="#">Previous & Saved Searches</a></li>
+          <li><a class="tdn" href="#">The Topic Box Page</a></li>
+          <li><a class="tdn" href="#">Creating a Topic Box</a></li>
+          <li><a class="tdn" href="#">View Topic Box Entries</a></li>
+          <li><a class="tdn" href="#">Creating an Entry</a></li>
+          <li><a class="tdn" href="#">Privacy Settings</a></li>
+          <li><a class="tdn" href="#">Co-Authoring</a></li>
         </ul>
       </div>
     </div>
     <div class="footer fw-b fs-10 clearfix">
       <div class="footer-navigation">
         <ul class="lsn">
-          <li>About Us</li>
-          <li>Contact Us</li>
-          <li>Terms of Use</li>
-          <li>Privacy Policy</li>
-          <li>Feedback</li>
+          <li><a class="tdf" href="#">About Us</a></li>
+          <li><a class="tdf" href="#">Contact Us</a></li>
+          <li><a class="tdf" href="#">Terms of Use</a></li>
+          <li><a class="tdf" href="#">Privacy Policy</a></li>
+          <li><a class="tdf" href="#">Feedback</a></li>
         </ul>
       </div>
       <div class="footer-copyright">
