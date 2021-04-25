@@ -7,32 +7,48 @@
   </head>
   <body>
     <div class="header clearfix">
-      <img class="fl" src="/images/logo.jpg" alt="TuTangle" />
-      <div class="search">
-        <input type="text" placeholder="Search by Term, Member, or Entry Title"/>
-        <input type="button" value="Search" />
-      </div>
-      <div class="dashboard">
-        <span>Joe Burros</span>
-        <div>Home|Settings|Logout</div>
+      <div class="header-content-wrapper">
+        <img class="fl" src="/images/logo.png" alt="TuTangle" />
+        <div class="search clearfix">
+          <div id="search-bar">
+            <input
+              class="fs-10"
+              type="text"
+              placeholder="Search by Term, Member, or Entry Title"
+            />
+          </div>
+        </div>
+        <div class="button-wrapper">
+          <button id="search-button">SEARCH</button>
+        </div>
+
+        <div class="dashboard fr">
+          <span class="username fw-b">Joe Burros</span>
+          <div class="dashboard-options fs-10 fw-b">Home | Settings | Logout</div>
+        </div>
       </div>
     </div>
 
-    <div class="navbar clearfix">
+    <div class="navbar fw-b clearfix">
       <div class="nav-items">
         <ul class="lsn">
           <li>Create New Entry</li>
-          <li>My topic Boxes</li>
+          <li>My Topic Boxes</li>
           <li>Friends</li>
           <li>Invite New Member</li>
         </ul>
 
         <div class="notifications">
-          <img src="/images/icon-box.jpg" alt="icon-box" />
-          Topic Boxes Invites - 2
-
-          <img src="/images/icon-person.jpg" alt="icon-person" />
-          Friend Requests - 0
+          <ul class="lsn">
+            <li>
+              <img src="/images/icons/icon-bin.png" alt="icon-box" />
+              Topic Boxes Invites - 2
+            </li>
+            <li>
+              <img src="/images/icons/icon-person.png" alt="icon-person" />
+              Friend Requests - 0
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -40,13 +56,13 @@
     <div class="body clearfix">
       <div class="left-sidebar fl">
         <div class="recent-searches-top">
-          <h2 class="sidebar-heading">Recent Searches</h2>
-          <ul class="psr lsn">
+          <div class="sidebar-heading fw-b"><h2>Recent Searches</h2></div>
+          <ul class="psr lsn fs-10 fw-b">
             <li>
-              Nick Cave and the Bad Seeds
+              Nick Cave and the <br />Bad Seeds
               <img
                 class="sbi"
-                src="/images/icon-download.jpg"
+                src="/images/icons/icon-download.png"
                 alt="icon-download.jpg"
               />
             </li>
@@ -54,7 +70,7 @@
               African Animals
               <img
                 class="sbi"
-                src="/images/icon-download.jpg"
+                src="/images/icons/icon-download.png"
                 alt="icon-download.jpg"
               />
             </li>
@@ -62,13 +78,14 @@
         </div>
 
         <div class="recent-searches-bottom">
-          <h2 class="sidebar-heading">Recent Searches</h2>
-          <ul class="psr lsn">
+          <div class="sidebar-heading"><h2>Recent Searches</h2></div>
+
+          <ul class="psr lsn fs-10 fw-b">
             <li>
-              Different versions of the tristan Und Isolde Prelude
+              Different versions of the <br />Tristan Und Isolde Prelude
               <img
                 class="sbi"
-                src="/images/icon-hamburger.jpg"
+                src="/images/icons/icon-hamburger.png"
                 alt="icon-hamburger.jpg"
               />
             </li>
@@ -76,7 +93,7 @@
               Music
               <img
                 class="sbi"
-                src="/images/icon-hamburger.jpg"
+                src="/images/icons/icon-hamburger.png"
                 alt="icon-hamburger.jpg"
               />
             </li>
@@ -84,7 +101,7 @@
               Guitar
               <img
                 class="sbi"
-                src="/images/icon-hamburger.jpg"
+                src="/images/icons/icon-hamburger.png"
                 alt="icon-hamburger.jpg"
               />
             </li>
@@ -92,7 +109,7 @@
               Bob Cohen
               <img
                 class="sbi"
-                src="/images/icon-hamburger.jpg"
+                src="/images/icons/icon-hamburger.png"
                 alt="icon-hamburger.jpg"
               />
             </li>
@@ -100,7 +117,7 @@
               Mark Schnack
               <img
                 class="sbi"
-                src="/images/icon-hamburger.jpg"
+                src="/images/icons/icon-hamburger.png"
                 alt="icon-hamburger.jpg"
               />
             </li>
@@ -108,7 +125,7 @@
               Jefferson Dickey
               <img
                 class="sbi"
-                src="/images/icon-hamburger.jpg"
+                src="/images/icons/icon-hamburger.png"
                 alt="icon-hamburger.jpg"
               />
             </li>
@@ -119,101 +136,124 @@
       <div class="center-container fl">
         <h1>Entries</h1>
         <div class="entries-selector clearfix">
-          <div class="left-selector fl">
+          <div class="left-selector fs-12 fw-b fl clearfix">
             <div class="selector-header">All Entries</div>
-            <div class="left-selector-child fl">All Members</div>
-            <div class="left-selector-child fl">Friends</div>
+            <div class="selector-child fl">All Members</div>
+            <div class="selector-child fl">Friends</div>
           </div>
-          <div class="right-selector fr">
+          <div class="right-selector fs-12 fw-b fr">
             <div class="selector-header">Subscribed</div>
-            <div class="left-selector-child fl">New Entries</div>
-            <div class="left-selector-child fl">New Comments</div>
+            <div class="selector-child fl">New Entries</div>
+            <div class="selector-child fl">New Comments</div>
           </div>
         </div>
-
+        <hr class="entries-seperator" />
         <div class="articles">
           <ul class="lsn">
             <li>
-              <div class="article-child">
-                <img class="fl" src="/images/man.jpg" alt="man.jpg" />
-                <div class="article-child-primary-heading">
-                  Day for Night by François Truffaut, a ground breaking film
+              <div class="article-child clearfix">
+                <div class="article-image">
+                  <img class="fl" src="/images/1.png" alt="man.jpg" />
                 </div>
-                <div class="article-child-secondary-heading">
-                  by Alan Coe | Feburary 10, 2012 | Subscribed
-                </div>
-                <div class="article-child-ternary-heading">
-                  From topic Box: My Favourite Movies
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="article-child">
-                <img class="fl" src="/images/man.jpg" alt="man.jpg" />
-                <div class="article-type">NEW ENTRY!</div>
-                <div class="article-child-primary-heading">
-                  Blade Runner, The Director's Cut
-                </div>
-                <div class="article-child-secondary-heading">
-                  by Mary Pilot | Feburary 8, 2012
-                </div>
-                <div class="article-child-ternary-heading">
-                  From topic Box: Behind the Scene
+                <div class="article-child-headings fl">
+                  <div class="article-child-primary-heading">
+                    Day for Night by François Truffaut, a ground breaking film
+                  </div>
+                  <div class="article-child-secondary-heading">
+                    by Alan Coe | Feburary 10, 2012 | Subscribed
+                  </div>
+                  <div class="article-child-ternary-heading">
+                    From topic Box: My Favourite Movies
+                  </div>
                 </div>
               </div>
             </li>
+            <hr class="article-seperator" />
             <li>
-              <div class="article-child">
-                <img class="fl" src="/images/man.jpg" alt="man.jpg" />
-                <div class="article-type">NEW COMMENT!</div>
-                <div class="article-child-primary-heading">
-                  The Best French Resturant in Chicago?
+              <div class="article-child clearfix">
+                <div class="article-image">
+                  <img class="fl" src="/images/2.png" alt="man.jpg" />
                 </div>
-                <div class="article-child-secondary-heading">
-                  by Jim Roy | Feburary 7, 2012
-                </div>
-                <div class="article-child-ternary-heading">
-                  From topic Box: Chicago Resturants Reviews
+                <div class="article-child-headings fl">
+                  <div class="article-type">NEW ENTRY!</div>
+                  <div class="article-child-primary-heading">
+                    Blade Runner, The Director's Cut
+                  </div>
+                  <div class="article-child-secondary-heading">
+                    by Mary Pilot | Feburary 8, 2012
+                  </div>
+                  <div class="article-child-ternary-heading">
+                    From topic Box: Behind the Scene
+                  </div>
                 </div>
               </div>
             </li>
+            <hr class="article-seperator" />
             <li>
-              <div class="article-child">
-                <img class="fl" src="/images/man.jpg" alt="man.jpg" />
-                <div class="article-child-primary-heading">
-                  The Meaning of Night. Dark Book but incredibly well written.
+              <div class="article-child clearfix">
+                <div class="article-image">
+                  <img class="fl" src="/images/3.png" alt="man.jpg" />
                 </div>
-                <div class="article-child-secondary-heading">
-                  by John-Peter Moïse | Feburary 10, 2012 | Subscribed
-                </div>
-                <div class="article-child-ternary-heading">
-                  From topic Box: Books Read & Books to Read
+                <div class="article-child-headings fl">
+                  <div class="article-type">NEW COMMENT!</div>
+                  <div class="article-child-primary-heading">
+                    The Best French Resturant in Chicago?
+                  </div>
+                  <div class="article-child-secondary-heading">
+                    by Jim Roy | Feburary 7, 2012
+                  </div>
+                  <div class="article-child-ternary-heading">
+                    From topic Box: Chicago Resturants Reviews
+                  </div>
                 </div>
               </div>
             </li>
+            <hr class="article-seperator" />
             <li>
-              <div class="article-child">
-                <img class="fl" src="/images/man.jpg" alt="man.jpg" />
-                <div class="article-type">TOPIC BOX INVITE!</div>
+              <div class="article-child clearfix">
+                <div class="article-image">
+                  <img class="fl" src="/images/4.png" alt="man.jpg" />
+                </div>
+                <div class="article-child-headings fl">
+                  <div class="article-child-primary-heading">
+                    The Meaning of Night. Dark Book but incredibly well written.
+                  </div>
+                  <div class="article-child-secondary-heading">
+                    by John-Peter Moïse | Feburary 10, 2012 | Subscribed
+                  </div>
+                  <div class="article-child-ternary-heading">
+                    From topic Box: Books Read & Books to Read
+                  </div>
+                </div>
+              </div>
+            </li>
+            <hr class="article-seperator" />
+            <li>
+              <div class="article-child clearfix">
+                <div class="article-image">
+                  <img class="fl" src="/images/5.png" alt="man.jpg" />
+                </div>
+                <div class="article-child-headings fl">
+                  <div class="article-type">TOPIC BOX INVITE!</div>
 
-                <div class="article-child-primary-heading">
-                  Pea Pesto
-                </div>
-                <div class="article-child-secondary-heading">
-                  by Marianne Gig | Feburary 6, 2012
-                </div>
-                <div class="article-child-ternary-heading">
-                  From topic Box: Favourite Recipes
+                  <div class="article-child-primary-heading">Pea Pesto</div>
+                  <div class="article-child-secondary-heading">
+                    by Marianne Gig | Feburary 6, 2012
+                  </div>
+                  <div class="article-child-ternary-heading">
+                    From topic Box: Favourite Recipes
+                  </div>
                 </div>
               </div>
             </li>
+            <hr class="article-seperator" />
           </ul>
         </div>
       </div>
 
       <div class="right-sidebar fl">
-        <div class="video-tutorials ">Video Tutorials</div>
-        <ul class="lsn">
+        <div class="sidebar-heading"><h2>Video Tutorials</h2></div>
+        <ul class="fs-10 fw-b lsn">
           <li>Overview of TuTangle</li>
           <li>Searching the Site</li>
           <li>Previous & Saved Searches</li>
@@ -226,7 +266,7 @@
         </ul>
       </div>
     </div>
-    <div class="footer clearfix">
+    <div class="footer fw-b fs-10 clearfix">
       <div class="footer-navigation">
         <ul class="lsn">
           <li>About Us</li>

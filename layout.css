@@ -1,11 +1,16 @@
+@font-face {
+  font-family: mulish;
+  src: url(/fonts/mulish.ttf);
+}
+
 * {
   margin: 0px;
-  padding: 0px;
-
+  padding: 0px; 
+  font-family: mulish;
 }
 
 body, .footer{
-  max-width: 80% ;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -27,10 +32,25 @@ body, .footer{
 /* sidebar icon */
 .sbi {
   position: absolute;
-  right: 0px;
+  right: 12px;
 }
 
 /* list style none */
 .lsn {
   list-style: none;
+}
+
+/* font size 10px */
+.fs-10{
+  font-size: 10px;
+}
+
+/* font size 12px */
+.fs-12{
+  font-size: 12px;
+}
+
+/* font weight bold */
+.fw-b{
+  font-weight: bold;
 }

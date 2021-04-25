@@ -1,0 +1,58 @@
+body- 1000px width
+
+sidebar:
+width - 195px
+padding 12px 15px
+height of header 40px
+
+header
+margin left 32px top 22px right 32px
+height 85px
+
+search bar
+width 276px
+h 20px
+
+navbar
+margin left 42px
+height 40px
+li items padding 30px
+
+navbar right items padding 30px
+
+logo to search 23px
+search to search button 7px
+
+right sidebar 
+width 176px 
+height of heading 42px
+li height 35px
+
+all entries wala:
+width 258px
+
+all members wala 114px
+
+articles:
+height 100px 
+width 518px 
+padding vertical 15px
+
+footer
+height: 45px
+li padding 17px
+
+
+colors:
+suga blue: 7dd9e8
+recent searches ko bule: 2fc1da
+sidebar item ko grey: f5f5f5
+search button ko blue: 275056
+search box ko white: caeff7
+subscribed ko green: 6f9621
+article ko blue: 4fafbf 
+friend request ko grey: 969696
+invite boxes ko grey 3c3c3c
+friends button ko grye: dddddd
+all members ko blue: 2fc1da
+topic box invite ko red: d33f1b
