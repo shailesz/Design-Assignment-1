@@ -155,28 +155,28 @@ button:hover {
   float: left;
   padding: 0px 10px;
   height: 25px;
-  background: url(images/icons/icon-bin-inactive.png) no-repeat;
+  background: url(./images/icons/icon-bin-inactive.png) no-repeat;
 }
 
 .notifications > ul > li:hover #icon-bin {
   float: left;
   padding: 0px 10px;
   height: 25px;
-  background: url(images/icons/icon-bin.png) no-repeat;
+  background: url(./images/icons/icon-bin.png) no-repeat;
 }
 
 #icon-person {
   float: left;
   padding: 0px 10px;
   height: 25px;
-  background: url(images/icons/icon-person-inactive.jpg) no-repeat;
+  background: url(./images/icons/icon-person-inactive.jpg) no-repeat;
 }
 
 .notifications > ul > li:hover #icon-person {
   float: left;
   padding: 0px 10px;
   height: 20px;
-  background: url(images/icons/icon-person.jpg) no-repeat;
+  background: url(./images/icons/icon-person.jpg) no-repeat;
 }
 
 .body {
