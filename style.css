@@ -32,7 +32,7 @@
   width: 10px;
   height: 20px;
   margin-right: -2px;
-  margin-top: 3px;
+  margin-top: 1px;
   background: url(images/components/search-bar-left.png) no-repeat 0 0;
 }
 
@@ -51,7 +51,7 @@
   padding: 5px;
   margin-right: 10px;
   margin-left: -5px;
-  margin-top: 3px;
+  margin-top: 1px;
   height: 10px;
   background: #caeff7;
 }
@@ -71,7 +71,7 @@
   width: 10px;
   height: 20px;
   background: url(images/components/search-bar-right.png) no-repeat 0 0;
-  background-size: 80%;
+
   margin-right: -15px;
   margin-top: -5px;
 }
@@ -100,11 +100,10 @@ button:hover {
   content: " ";
   float: left;
   width: 10px;
-  height:20px;
+  height: 20px;
   margin-top: 20px;
   margin-right: -3px;
   background: url(images/components/search-button-left.png) no-repeat 0 0;
-  
 }
 .button-wrapper:after {
   content: " ";
@@ -114,7 +113,6 @@ button:hover {
   margin-top: 20px;
   margin-right: -3px;
   background: url(images/components/search-button-right.png) no-repeat 0 0;
-  background-size: 80%;
 }
 
 .dashboard {
@@ -202,6 +200,7 @@ button:hover {
   color: #fff;
   line-height: 42px;
   font-size: 14px;
+  background-color: transparent;
 }
 
 .recent-searches > ul > li > a {
@@ -209,7 +208,7 @@ button:hover {
   display: block;
 }
 
-.recent-searches > ul > li>a:hover {
+.recent-searches > ul > li > a:hover {
   padding: 12px;
   background: white;
   display: block;
@@ -234,7 +233,6 @@ button:hover {
   width: 10px;
   height: 65px;
   background: url(images/components/grey-big-button-left.jpg) no-repeat 0 0;
- 
 }
 
 .right-selector {
@@ -255,7 +253,6 @@ button:hover {
   height: 65px;
   margin-right: -2px;
   background: url(images/components/grey-big-button-right.jpg) no-repeat 0 0;
-  
 }
 
 .selector-header {
@@ -411,12 +408,12 @@ button:hover {
   background: #f5f5f5;
 }
 
-.right-sidebar > ul >  li > a {
+.right-sidebar > ul > li > a {
   padding: 12px;
   display: block;
 }
 
-.right-sidebar > ul >  li>a:hover {
+.right-sidebar > ul > li > a:hover {
   padding: 12px;
   background: white;
   display: block;
@@ -438,7 +435,7 @@ button:hover {
   margin: 0px 3px;
 }
 
-.footer-navigation > ul > li:after {
+.footer-navigation > ul > li:before {
   content: "\2022";
   width: 10px;
   height: 10px;
@@ -446,8 +443,8 @@ button:hover {
   margin-left: 6px;
   color: #bbbbbb;
 }
-.footer-navigation > ul > li:last-child:after {
-  content: "";
+.footer-navigation > ul > li:first-child:before {
+  content: " ";
 }
 
 .footer-copyright {

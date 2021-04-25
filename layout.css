@@ -1,15 +1,11 @@
-@font-face {
-  font-family: mulish;
-  src: url(/fonts/mulish.ttf);
-}
-
 * {
   margin: 0px;
-  padding: 0px; 
-  font-family: mulish;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-body, .footer{
+body,
+.footer {
   max-width: 1000px;
   margin: auto;
 }
@@ -41,28 +37,30 @@ body, .footer{
 }
 
 /* font size 10px */
-.fs-10{
+.fs-10 {
   font-size: 10px;
 }
 
 /* font size 12px */
-.fs-12{
+.fs-12 {
   font-size: 12px;
 }
 
 /* font weight bold */
-.fw-b{
+.fw-b {
   font-weight: bold;
 }
 
 /* text decoration none */
-.tdn{
+.tdn {
   text-decoration: none;
+  background-color: transparent;
   color: #3c3c3c;
 }
 
 /* footer text decoration */
-.tdf{
+.tdf {
   color: #bbbbbb;
   text-decoration: none;
+  background-color: transparent;
 }
