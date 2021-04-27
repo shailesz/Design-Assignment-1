@@ -362,6 +362,14 @@
     margin-top: 0px;
     background: url(images/components/blue-menu-right.jpg) no-repeat 0 0;
   }
+  .entries-selector > h1{
+    float: left;
+  }
+
+  .entries-selector > img{
+    float: right;
+  }
+
   .entries-seperator {
     border: 2px solid #2fc1da;
     max-width: 654.5px;
@@ -853,6 +861,10 @@
     max-width: 654.5px;
   }
 
+  .entries-selector > img{
+    display: none;
+  }
+
   .center-container {
     padding-bottom: 50px;
   }
@@ -992,6 +1004,9 @@
     margin: 0 auto;
     width: 100%;
   }
+  .logo-image {
+    max-width: 250px;
+  }
 
   .search {
     margin-top: 20px;
@@ -1006,7 +1021,7 @@
     border: none;
     height: 10px;
     position: relative;
-    width: 200px;
+    width: 300px;
     outline: none;
     margin-right: 7px;
   }
